@@ -13,17 +13,17 @@ const sideDrawer = (props) => {
     }
     return (
         <Aux>
-        <BackDrop 
-            show={props.open}
-            clicked={props.closed}/>
-        <div className={attachedClasses.join(' ')}>
-            <div className={styles.Logo}>
-                <Logo />
+            <BackDrop
+                show={props.open}
+                clicked={props.closed} />
+            <div className={attachedClasses.join(' ')}>
+                <div className={styles.Logo}>
+                    <Logo />
+                </div>
+                <nav>
+                    <NavigationItems />
+                </nav>
             </div>
-            <nav>
-                <NavigationItems />
-            </nav>
-        </div>
         </Aux>
     );
 };
